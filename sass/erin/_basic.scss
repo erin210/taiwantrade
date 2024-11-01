@@ -1,0 +1,135 @@
+// $header_height_pc:178px;
+// $header_height_m:108px;
+//keyframe
+@include keyframe (rrroate) {
+    //轉180度一圈
+    0% {
+        @include rotate (0);
+    }
+    100% {
+        @include rotate (180);
+    }
+}
+
+@include keyframe (logoshow) {
+    //轉180度一圈
+    0% {
+        opacity: 0;
+        margin-top: -5px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+
+@include keyframe (fadeIn) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframe (fadeIn70) {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .7;
+    }
+}
+@include keyframe (fadeOut) {
+    0% {
+        opacity: 1;
+        z-index: 999;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+        
+    }
+}
+// @keyframes fadeOutEnd {
+//     to {
+//         visibility: hidden;
+//     }
+// }
+//物件由右往左滑進 >>>
+@include keyframe (slideLeft) {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.slideLeft {
+    @include animation (0, .5s, slideLeft, forwards, unset, 1);
+}
+
+//物件由左往右滑進 <<<<
+@include keyframe (slideright) {
+    0% {
+        width: 0;
+        right: -200px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+//header hide
+@include keyframe (headerHide) {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+    100% {
+        opacity: 0;
+        top: -200px;
+    }
+}
+
+//breadcrumb_bg up - M
+@include keyframe (bcUp) {
+    0% {
+        opacity: 1;
+        top: 109px;
+    }
+    100% {
+        opacity: 0;
+        top: -40px;
+    }
+}
+
+//物件轉90度
+@include keyframe (rotate90) {
+    0% {
+        @include rotate (-90);
+    }
+    100% {
+        @include rotate (0);
+    }
+}
+
+// .arrow_downR {
+//     @include animation (0, .5s, rotate90, forwards, unset, 1);
+// }
+.fade-out {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+button:focus,
+button:active,
+button:hover {
+    outline: none !important;
+    box-shadow: none !important;
+}
