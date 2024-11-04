@@ -50,6 +50,7 @@ $cyan:    #48c4da !default;
 $blue-lighten:    #aff3ff !default;
 $blue-bg:    #E4EFF4 !default;
 $facebook:    #1877f2 !default;
+$line:    #00b900 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -533,10 +534,10 @@ $border-color:                $gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .25rem !default;
-$border-radius-sm:            .2rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-pill:          50rem !default;
+$border-radius:               0;//.25rem !default;
+$border-radius-sm:            0;//.2rem !default;
+$border-radius-lg:            0;//.3rem !default;
+$border-radius-pill:          0;//50rem !default;
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables

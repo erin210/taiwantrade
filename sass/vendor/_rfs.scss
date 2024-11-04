@@ -9,7 +9,7 @@
 // Configuration
 
 // Base value
-$rfs-base-value: 1.25rem !default;
+$rfs-base-value: 1rem !default;
 $rfs-unit: rem !default;
 
 @if $rfs-unit != rem and $rfs-unit != px {

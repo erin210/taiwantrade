@@ -1,5 +1,59 @@
 
-<ul>
-    <li><img src="./assets/img/logo-color.f50f778.svg" alt="">
-    </li>
-</ul>
+<div class="footerAll">
+
+
+    <div class="footerInfo">
+        <ul>
+            <li class="footerLogo logo1"><img src="./assets/img/logo-color.f50f778.svg" alt=""></li>
+            <li>地址：台北市基隆路一段333號國貿大樓5-7樓</li>
+            <li>電話：886-2-2725-5200</li>
+            <li>客服專線：0800-506-088</li>
+            <li>Email：member@taiwantrade.com.tw</li>
+            <li class="footerLogo logo2 mt-3"><span>主辦</span><i><img src="./assets/img/logo_ita.svg" alt=""></i></li>
+            <li class="footerLogo logo3"><span>執行</span><i><img src="./assets/img/logo_taitra.svg" alt=""><i><img src="./assets/img/logo-color.f50f778.svg" alt=""></i></li>
+        </ul>
+    </div>
+    <div class="footerLinks">
+        <div>
+            <h5>數位電商基地<i class="bi bi-caret-down"></i></h5>
+            <ul>
+                <li><a href="https://www.datesummit.com/">DATE</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="news.html">知識補給</a></li>
+                <li><a href="http://elearning.taiwantrade.com">數位學習</a></li>
+                <li><a href="https://info.taiwantrade.com/index/ecplatf orm#menu=11612">電商輔導</a></li>
+                <li><a href="https://info.taiwantrade.com/video/#menu =11610">影音專區</a></li>
+                <li><a href="download.html">檔案下載區</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>策略聯盟<i class="bi bi-caret-down"></i></h5>
+            <ul>
+                <li><a href="https://info.taiwantrade.com/index/service_special#wa2">國際企業認證</a></li>
+                <li><a href="https://info.taiwantrade.com/index/service_special#wa5">金流服務</a></li>
+                <li><a href="https://info.taiwantrade.com/index/service_special#wa4">物流服務</a></li>
+                <li><a href="https://events.taiwantrade.com/writepath">翻譯服務</a></li>
+                <li><a href="https://info.taiwantrade.com/index/service_special#menu=11612">其他加值服務</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>條款與聲明<i class="bi bi-caret-down"></i></h5>
+            <ul>
+                <li><a href="privacy-policy.html">隱私權政策</a></li>
+                <li><a href="data-collection-agreement.html">個資保護說明</a></li>
+                <li><a href="faq.html">網站與服務Q&A</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    建議使用瀏覽器軟體 Google Chrome、Firefox、Apple Safari，以獲得最佳瀏覽體驗。中華民國對外貿易發展協會 版權所有© Copyright 2020 TAITRA. All Rights Reserved.
+</div>
+<script>
+    $(document).ready(function() {
+        $('.footerLinks h5').on('click', function() {
+            $(this).toggleClass('rotate180');
+            $(this).siblings('ul').toggle(200); // 切換 .down_menu 的顯示
+        });
+    });
+</script>

@@ -13,7 +13,7 @@
 
 .nav-link {
   display: block;
-  padding: $nav-link-padding-y $nav-link-padding-x;
+  padding: $nav-link-padding-x;
   @include font-size($nav-link-font-size);
   font-weight: $nav-link-font-weight;
   color: $nav-link-color;
@@ -84,10 +84,13 @@
 .nav-pills {
   .nav-link {
     background: none;
-    border: 0;
+    border: 1px solid $cyan-500;
     @include border-radius($nav-pills-border-radius);
-
     color: $cyan-200;
+    margin: 0 .5em;
+    &:hover{
+      background-color: rgba($color: $cyan-100, $alpha: .2)
+    }
   }
 
   .nav-link.active,

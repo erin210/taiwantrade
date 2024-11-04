@@ -1,198 +1,143 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    
-
-
-    <!-- 手機版時顯示 offcanvas 按鈕 -->
-    <div class="navBar_m d-flex justify-content-between">
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="logo d"><a class="navbar-brand" href="index.html"><img src="./assets/img/logo-color.f50f778.svg" alt=""> </a>
-        <a class="navbar-brand" href="https://info.taiwantrade.com/"><img src="./assets/img/logo-tt.0945799.svg"
-            alt=""></a>
-      </div>
-      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchTop"
-          aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
-
+ 
+<div class="navBar navbar-expand-lg">
+     <!-- logo -->
+     <div class="logo order-2 order-lg-1"><a class="navbar-brand" href="index.html"><img src="./assets/img/logo-color.f50f778.svg" alt=""> </a>
+      <a class="navbar-brand" href="https://info.taiwantrade.com/"><img src="./assets/img/logo-tt.0945799.svg"
+          alt=""></a>
     </div>
-
-    <!-- 桌面版時顯示原本的 navbar -->
-    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between">
-      <div class="logo d"><a class="navbar-brand" href="index.html"><img src="./assets/img/logo-color.f50f778.svg" alt=""> </a>
-        <a class="navbar-brand" href="https://info.taiwantrade.com/"><img src="./assets/img/logo-tt.0945799.svg"
-            alt=""></a>
+    <!-- 主選單 -->
+    <div class="mainNav order-1 order-lg-2">
+      <div id="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <ul class="nav">
-        <li>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="https://www.datesummit.com/">
-                  DATE
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="https://www.datesummit.com/" target="_blank">DATE官網</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="https://www.accupass.com/event/2407100 629363613327320">立刻報名</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#">
-                  知識補給
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">新知脈動</a></li>
-                  <li><a class="dropdown-item" href="#">商情資訊</a></li>
-                  <li><a class="dropdown-item" href="#">成功案例</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#">
-                  數位學習
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="http://elearning.taiwantrade.com" target="_blank">數位貿易學苑</a></li>
-                  <li><a class="dropdown-item"
-                      href="https://info.taiwantrade.com/promotion/e vent#menu=11608#menu=11608"
-                      target="_blank">電商研討會</a></li>
-                  <li><a class="dropdown-item" href="https://events.taiwantrade.com/" target="_blank">活動資訊</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#">
-                  電商輔導
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="https://info.taiwantrade.com/index/ecplatf orm#menu=11612"
-                      target="_blank">跨境電商上架</a></li>
-                  <li><a class="dropdown-item" href="https://digitalcommerce.taiwantrade.com/ ai.html"
-                      target="_blank">中小企業專案</a></li>
-                  <li><a class="dropdown-item" href="https://events.taiwantrade.com/checkup" target="_blank">數位行銷健檢</a>
-                  </li>
-                  <li><a class="dropdown-item" href="">說明暨洽談會</a></li>
-                  <li><a class="dropdown-item" href="https://info.taiwantrade.com/index/service _special#wa2"
-                      target="_blank">商品認證檢測</a></li>
-                  <li><a class="dropdown-item" href="https://info.taiwantrade.com/memberinde x/ttcampus"
-                      target="_blank">電商實戰營</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#">
-                  影音專區
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="https://info.taiwantrade.com/video/#menu =11610"
-                      target="_blank">影音最前線</a></li>
-                  <li><a class="dropdown-item" href="https://www.youtube.com/taiwantrade" target="_blank">Youtube</a>
-                  </li>
-
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchTop"
-          aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
-        </li>
-      </ul>
-    </div>
-
-
-
-    <!-- 手機版時顯示的 offcanvas -->
-    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel">
-
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-
-      <div class="offcanvas-body">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div id="sidr">
+        <!-- <button id="close-sidr" style="float: right; margin: 10px;">✕</button> -->
+        <!-- <h2>側邊欄</h2> -->
+        <ul class="navBar_list">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://www.datesummit.com/" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              DATE
+            <a class="nav-link no_link" href="https://www.datesummit.com/"  role="button">
+              DATE<i class="bi bi-caret-down"></i></i>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
+            <ul class="down_menu">
+              <li><a class="dropdown-item" href="https://www.datesummit.com/" target="_blank">DATE官網</a></li>
+              <li><a class="dropdown-item" href="https://www.accupass.com/event/2407100 629363613327320">立刻報名</a>
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="about.html">
+              關於我們
+            </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link no_link" href="#" role="button">
+              知識補給<i class="bi bi-caret-down"></i></i>
+            </a>
+            <ul class="down_menu">
+              <li><a class="dropdown-item" href="news.html">新知脈動</a></li>
+              <li><a class="dropdown-item" href="information.html">商情資訊</a></li>
+              <li><a class="dropdown-item" href="case.html">成功案例</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no_link" href="#">
+              數位學習<i class="bi bi-caret-down"></i></i>
+            </a>
+            <ul class="down_menu">
+              <li><a class="dropdown-item" href="http://elearning.taiwantrade.com" target="_blank">數位貿易學苑</a></li>
+              <li><a class="dropdown-item"
+                  href="https://info.taiwantrade.com/promotion/e vent#menu=11608#menu=11608"
+                  target="_blank">電商研討會</a></li>
+              <li><a class="dropdown-item" href="https://events.taiwantrade.com/" target="_blank">活動資訊</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no_link" href="#">
+              電商輔導<i class="bi bi-caret-down"></i></i>
+            </a>
+            <ul class="down_menu">
+              <li><a class="dropdown-item" href="https://info.taiwantrade.com/index/ecplatf orm#menu=11612"
+                  target="_blank">跨境電商上架</a></li>
+              <li><a class="dropdown-item" href="https://digitalcommerce.taiwantrade.com/ ai.html"
+                  target="_blank">中小企業專案</a></li>
+              <li><a class="dropdown-item" href="https://events.taiwantrade.com/checkup" target="_blank">數位行銷健檢</a>
+              </li>
+              <li><a class="dropdown-item" href="">說明暨洽談會</a></li>
+              <li><a class="dropdown-item" href="https://info.taiwantrade.com/index/service _special#wa2"
+                  target="_blank">商品認證檢測</a></li>
+              <li><a class="dropdown-item" href="https://info.taiwantrade.com/memberinde x/ttcampus"
+                  target="_blank">電商實戰營</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no_link" href="#">
+              影音專區<i class="bi bi-caret-down"></i></i>
+            </a>
+            <ul class="down_menu">
+              <li><a class="dropdown-item" href="https://info.taiwantrade.com/video/#menu =11610"
+                  target="_blank">影音最前線</a></li>
+              <li><a class="dropdown-item" href="https://www.youtube.com/taiwantrade" target="_blank">Youtube</a>
+              </li>
+            </ul>
+          </li>
+
         </ul>
-
       </div>
-
     </div>
+    <!-- 搜尋 -->
+    <button class="btn order-3 order-lg-3 topSearchBTN" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchTop"
+        aria-controls="offcanvasTop"><i class="bi bi-search"></i>
+      </button>
+</div>
 
 
+<div class="offcanvas offcanvas-top" tabindex="-1" id="searchTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">全站搜尋</h5>
+    <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-
-</nav>
-
-
-<div class="offcanvas offcanvas-top navSearchBar" tabindex="-1" aria-labelledby="offcanvasTopLabel" id="searchTop">
-  <div class="offcanvas-header d-flex">
+  <div class="offcanvas-body">
     <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="請輸入關鍵字..." aria-label="Search">
-      <button class="btn" type="submit" id="searchClose">搜尋</button>
+      <input class="form-control" type="search" placeholder="請輸入關鍵字..." aria-label="Search">
+      <button class="btn search_btn" type="submit" id="searchClose">搜尋</button>
     </form>
-    <!-- <h5 id="offcanvasTopLabel">Offcanvas top</h5> -->
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
 </div>
+
+<script src='../assets/js/jquery-3.4.1.min.js'></script>
+<script src="../assets/js/jquery.sidr.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // 預設sidr關閉
+    $.sidr('close', 'sidr');
+
+    // 開啟側邊欄
+    $('#menu-toggle').sidr({
+      name: 'sidr',      // 彈出物件ID
+      side: 'left',
+      speed: 200,
+      displace: false    // 不推擠
+    });
+
+    $('#menu-toggle').on('click touchstart', function () {
+      $(this).toggleClass('active');
+
+      $.sidr('toggle', 'sidr');
+    });
+
+
+
+  });
+
+  $(document).ready(function () {
+    $('.navBar_list .no_link').on('click', function (event) {
+      event.preventDefault(); 
+      $(this).toggleClass('rotate180');
+      $(this).siblings('.down_menu').toggle(200).addClass('downdown'); // 切換 .down_menu 的顯示
+    });
+  });
+
+</script>
+
