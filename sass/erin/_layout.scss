@@ -323,6 +323,7 @@ header {
             width: 6em;
             background-color: $primary;
             color: $white;
+            @include tran(.3s, ease);
 
             &:hover {
                 filter: brightness(1.2);
@@ -392,6 +393,7 @@ header {
     background-color: $white;
     padding: 4%;
     margin-bottom: 10px;
+    border-radius: 5px;
 
     @include media-breakpoint-down(md) {
         padding: 4% 5vw;
@@ -898,6 +900,43 @@ header {
 
     }
 }
+.searchList {
+    padding: 0 4%;
+    .searchItem {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        border: 1px solid $cyan;
+        @include tran(.3s, ease);
+        &:hover{
+            background-color:lighten($color: $cyan-100, $amount: 6%);
+            // background-color:$cyan-100;
+            p{
+                color: $primary;
+            }
+        }
+        a{
+            // color: $gray-700;
+            text-decoration: none;
+            
+
+        }
+
+        h5 {
+            color: $primary;
+            @include text-ellipsis (100%, 1);
+        }
+
+        p {
+            color: $gray-700;
+            font-size: .9rem;
+            @include text-ellipsis (100%, 2);
+        }
+        .btn{
+            color: $white;
+        }
+
+    }
+}
 
 .pageNav {
     width: 80%;
@@ -954,6 +993,7 @@ header {
                 font-weight: bold;
                 letter-spacing: .1em;
                 overflow: hidden;
+                @include tran(.3s, ease);
 
                 span {
                     position: relative;
@@ -1013,7 +1053,7 @@ header {
                     }
 
                     span.active {
-                        color: $cyan;
+                        color:darken($color: $cyan, $amount: 15%);
                     }
                 }
             }
@@ -1298,6 +1338,7 @@ header {
             padding: .5rem;
             text-decoration: none;
         }
+        @include tran(.3s, ease);
         &:hover{
             background-color: $primary;
         }
@@ -1352,10 +1393,12 @@ header {
 
     .page-link {
         // border: 0;
+        width: 40px;
+        height: 38px;
         border: 1px solid $cyan;
         margin: 0 5px;
-
-
+        text-align: center;
+        @include tran(.3s, ease);
         &:hover {
             background-color: $cyan-100;
             color: $primary;
@@ -1365,6 +1408,12 @@ header {
     &.goto_page {
         .page-link {
             border: 0;
+            border: 1px solid transparent;
+            &:hover{
+                color: $primary;
+                background-color: transparent;
+                border: 1px solid $cyan;
+            }
         }
     }
 
@@ -1423,11 +1472,27 @@ footer{
     
     a{
         text-decoration: none;
-        color: $gray-800;
+        color: $gray-700;
         // font-size: 1rem;
+        // @include tran(.3s, ease);
+        // &:after{
+        //     content: "";
+        //     width: 100%;
+        //     height: 1px;
+        //     margin-top: -.5em;
+        //     background-color: $cyan;
+        //     display: inline;
+        //     opacity: .2;
+        //     @include tran(.3s, ease);
+        // }
         &:hover{
-            color: $primary;
+            color: $gray-900;
             text-decoration: underline;
+            // &:after{
+            //     opacity: 1;
+
+            // }
+            
         }
     }
     .footerInfo{
