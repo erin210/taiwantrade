@@ -169,6 +169,7 @@ body.indexbg {
         justify-content: center;
         padding-left: 0;
         padding-right: 0;
+        margin-bottom: 1.8em;
 
         p {
 
@@ -414,16 +415,49 @@ display: none;
     padding: 11% 5%;
     background-color: rgba($color: $cyan, $alpha: .3);
 
-    .row {
+    .caseList {
         padding: 3em;
         border: 1px solid $cyan-100;
         background-color: rgba($color: $cyan-300, $alpha: .3);
-        flex-wrap: wrap;
+        @include media-breakpoint-down(lg){
+            padding: 2em 1em;
+        }
+        .caseItem {
+            display: flex;
+            flex-wrap: nowrap;
+            figure.card.card_vv{
+                width: calc(20% - 20px);
+                height: 20%;
+                margin: 10px;
+                .card_img{
+                    height: 9vw;
+                }
+                .card-body{
+                    height: 30%;
+                }
+                
+            }
+            @include media-breakpoint-down(lg){
+                flex-wrap: wrap;
+                    figure.card.card_vv{
+                        width: calc(50% - 20px);
+                        .card_img{
+                            height: 20vw;
+                        }
+                    } 
+                }
+            @include media-breakpoint-down(sm){
+                figure.card.card_vv{
+                    width: calc(100% - 20px);
+                    .card_img{
+                        height: 35vw;
+                    }
+                }
+            }
+        }
     }
 
-    .col {
-        width: 100%;
-    }
+    
 
     h2 {
         position: relative;
@@ -444,7 +478,7 @@ display: none;
         // padding-left: 0;
         // padding-right: 0;
         .card-body {
-            padding: 1em;
+            padding: .5em 1em;
 
             p {
                 font-weight: 500;

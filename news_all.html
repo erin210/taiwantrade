@@ -52,26 +52,41 @@
                                         <li><a href="news.html"><span>熱門文章</span></a></li>
                                         <li><a href="news_new.html"><span>最新文章</span></a></li>
                                         <li><a href="news_all.html" class="active"><span>分類文章</span></a>
-                                        <ul>
-                                            <li><span class="active">・跨境電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                            <li><span>・東南亞電商</span></li>
-                                        </ul>
+                                            <ul>
+                                                <li><a href="news_all.html">・跨境電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                                <li><a href="news_all.html">・東南亞電商</a></li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </aside>
@@ -274,6 +289,14 @@
         $('.navTitle').on('click',function(){
             $(this).siblings('ul').slideToggle(300);
         })
+
+        $('.pageNav>ul>li>ul>li').on('click', function () {
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1);
+            return false;
+        });
+        
         $("header").load("./layout/header.html");
         $("footer").load("./layout/footer.html");
     </script>

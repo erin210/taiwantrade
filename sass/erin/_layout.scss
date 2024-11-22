@@ -130,7 +130,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding: 10px 20px;
 
         .logo {
             width: 50%;
@@ -433,6 +433,7 @@ header {
         .articleNote {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             color: $gray-700;
 
             b {
@@ -1071,17 +1072,18 @@ header {
 .card {
     // position: relative;
     background-color: $gray-100;
-    border: 0;
+    border: 1px solid $gray-200;
+    
     .card-body{
         // align-items: center;
-        padding: 1.5em;
+        padding: 1.3em 1.8em;
         
     }
     h5 {
         font-size: 1.15rem;
         font-weight: bold;
         color: $primary;
-        @include text-ellipsis (100%, 2);
+        @include text-ellipsis (100%, 1);
     }
 
     p {
@@ -1124,6 +1126,7 @@ header {
             border-color: transparent $red;
             border-width: 0px 0px 55px 55px;
             border-style: solid;
+            border-radius: 5px;
 
         }
 
@@ -1205,6 +1208,9 @@ header {
         justify-content: center;
         padding-left: 0;
         padding-right: 0;
+        .card-body{
+            border-top: 1px solid $white;
+        }
 
         .card_img {
             display: flex;
@@ -1244,9 +1250,10 @@ header {
             width: 70%;
         }
 
-        input.form-control {
+        input,input.form-control {
             border-radius: 0;
             border: 1px solid $primary;
+            margin-right: 0 !important;
         }
 
         button {
@@ -1268,6 +1275,7 @@ header {
         border-radius: 50px;
         font-size: .8rem;
         margin-right: .5em;
+        margin-bottom: .7em;
 
         i {
             display: inline-block;
@@ -1306,6 +1314,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    height: 85%;
     border: 1px solid $cyan;
     margin-bottom: 1rem;
 
@@ -1319,12 +1328,14 @@ header {
         box-sizing: border-box;
 
     }
-
+    &>div:first-child{
+        width: 100%;
+    }
     &>div:last-child {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: auto;
+        width: 4.5rem;
         min-height: 100%;
         background-color: $cyan;
         text-decoration: none;
@@ -1341,6 +1352,11 @@ header {
         @include tran(.3s, ease);
         &:hover{
             background-color: $primary;
+        }
+        @include media-breakpoint-down(md){
+            width: 100%;
+            min-height: inherit;
+
         }
     }
     
@@ -1393,11 +1409,12 @@ header {
 
     .page-link {
         // border: 0;
-        width: 40px;
-        height: 38px;
+        width: 44px;
+        height: 42px;
         border: 1px solid $cyan;
         margin: 0 5px;
         text-align: center;
+        padding: .46rem .75rem;
         @include tran(.3s, ease);
         &:hover {
             background-color: $cyan-100;
