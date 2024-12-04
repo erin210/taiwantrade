@@ -1225,14 +1225,46 @@ header {
                 object-fit: cover;
             }
         }
+        
 
         .btn{
             width: 8em;
             margin-left: calc(50% - 4em);
         }
+        &.card_yt{
+            width: 100%;
+            h5{
+
+                @include text-ellipsis (100%, 2);
+            }
+            .card_video{
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%; /* 16:9 的比例 (9 ÷ 16 = 0.5625) */
+                overflow: hidden;
+                iframe{
+                    // width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 0; /* 確保沒有邊框 */
+                }
+            }
+            p{
+                line-height: 1;
+                margin-bottom: .35em;
+            }
+            .card-body{
+                border-top: 0;
+            }
+        }
     }
+    
 
 }
+
 
 
 // .infoSaerch{
@@ -1307,7 +1339,6 @@ header {
     }
 
 }
-
 
 
 .downloadBtn {
@@ -1543,6 +1574,26 @@ footer{
         }
         .footerLogo{
             margin-bottom: .8em;
+        }
+        .footerIcons{
+            width: fit-content;
+            margin-top: 2em;
+            background-color: $gray-100;
+            border-radius: 10px;
+            padding-right: 18px;
+            img{
+                height: 2.5em;
+            }
+            a{
+                &:hover{
+                    filter: brightness(1.2);
+                }
+            }
+            
+            &>img{
+                height: 5em;
+                margin-right:5px;
+            }
         }
     }
     
