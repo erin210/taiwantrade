@@ -179,6 +179,7 @@ header {
                 position: relative;
                 z-index: 20;
                 // padding-bottom: 10px;
+                
 
             }
             .no_link{
@@ -201,7 +202,8 @@ header {
                 border: 1px solid $cyan;
                 border-radius: 10px;
                 .dropdown-item{
-                    color: $gray-700;
+                    color: $gray-800;
+
                 }
             }
             //NAV PC-------
@@ -1483,15 +1485,47 @@ footer{
 .footerAll {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     margin-top: 50px;
-    padding: 60px 2%;
+    padding: 60px 10%;
     background-color: $white;
     font-size: 1rem;
     border-top: 1px solid $cyan-200;
+    @media (max-width: 1470px){
+        padding: 60px 3%;
+    }
+    @media (max-width: 1245px){
+        padding: 60px 2%;
+    }
+    @include media-breakpoint-down(xl){
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        padding: 60px 5%;
+        .footerInfo{
+            order: 1;
+        }
+        .footerLinks{
+            order: 3;
+            margin-left: -2vw;
+            margin-bottom: 2em;
+        }
+        .footerOthers{
+            width: fit-content;
+            order:2;
+        }
+    }
     @include media-breakpoint-down(md){
         font-size: .9em;
+        padding: 40px 30px;
+        .footerLinks{
+            order: 2;
+            margin-left: 2vw;
+        }
+        .footerOthers{
+            order: 3;
+        }
     }
     h5{
         font-size: 120%;
@@ -1547,7 +1581,7 @@ footer{
         // font-size: 1rem;
         margin-bottom: 2em;
         &>ul{
-            margin: 0 2em;
+            // margin: 0 2em;
             li{
                 // font-size: 1rem;
                 color: $gray-800;
@@ -1559,48 +1593,19 @@ footer{
                 img{
                     height: 2em;
                 }
-                &.logo1{
-                    img{
-                        height: 2.3em;
-                    }
-                }
-                &.logo3{
-                    img{
-                        height: 1.3em;
-
-                    }
-                }
+                
             }
         }
-        .footerLogo{
+        .foot_logo{
             margin-bottom: .8em;
         }
-        .footerIcons{
-            width: fit-content;
-            margin-top: 2em;
-            background-color: $gray-100;
-            border-radius: 10px;
-            padding-right: 18px;
-            img{
-                height: 2.5em;
-            }
-            a{
-                &:hover{
-                    filter: brightness(1.2);
-                }
-            }
-            
-            &>img{
-                height: 5em;
-                margin-right:5px;
-            }
-        }
+        
     }
     
     .footerLinks{
         display: flex;
         &>div{
-            margin: 0 2em;
+            margin: 0 2vw;
             &>ul{
                 margin: 0;
                 padding: 0;
@@ -1622,8 +1627,61 @@ footer{
         }
         
     }
-    
-    
+    .footerOthers{
+        .foot_icons{
+            width: 100%;
+            // background-color: $gray-100;
+            border: 1px solid $gray-300;
+            padding: 10px 25px 10px 10px;
+            border-radius: 10px;
+            margin-bottom: .5em;
+            img{
+                height: 3em;
+            }
+            a{
+                &:hover{
+                    filter: brightness(1.2);
+                }
+            }
+            
+            &>img{
+                height: 5em;
+                margin-right:12px;
+            }
+        }
+        .unit{
+            width: 100%;
+            border: 1px solid $gray-300;
+            padding: 10px 20px;
+            border-radius: 10px;
+            div{
+                margin: 0;
+            }
+            span{
+                font-size: 12px;
+                margin-right: .5em;
+            }
+            i{
+                display: inline-block;
+                &>img{
+                    // width: 4em;
+                    height: auto;
+                    &.logo2_1{
+                        width: 100px;
+                    }
+                    &.logo2_2{
+                        width: 170px;
+                        margin-right: 5px;
+                    }
+                    &.logo2_3{
+                        width: 80px;
+                    }
+                }
+                
+            }
+        }
+        
+    }
 }
 .copyright{
     width: 100%;
