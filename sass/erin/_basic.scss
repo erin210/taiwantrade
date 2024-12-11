@@ -249,14 +249,14 @@ button:hover {
 .marquee >div {
     // display: inline-block;
     // padding-left: 0;       /* 起始位置為容器外部 */
-    animation: marquee 25s linear infinite;
+    animation: marquee 50s linear infinite;
     text-transform:uppercase;
     background-color: transparent;
 }
 .marquee_md{
     position: absolute;
     &>div {
-        animation: marquee_md 25s linear infinite;
+        animation: marquee_md 70s linear infinite;
     }
 }
 
