@@ -13,7 +13,7 @@
 
 .nav-link {
   display: block;
-  padding: $nav-link-padding-x;
+  padding: $nav-link-padding-x .8rem;
   @include font-size($nav-link-font-size);
   font-weight: $nav-link-font-weight;
   color: $nav-link-color;
